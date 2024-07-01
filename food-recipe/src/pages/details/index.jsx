@@ -38,7 +38,6 @@ export const Details = () => {
 						}
 						alt="recipe item"
 						className="h-full w-full object-cover block group-hover:scale-105 duration-300"
-						loading="lazy"
 					/>
 				</div>
 			</div>

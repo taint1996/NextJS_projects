@@ -14,7 +14,6 @@ export const RecipeItem = ({ item }) => {
 					}
 					alt="recipe item"
 					className="block w-full"
-					loading="lazy"
 				/>
 			</div>
 			<div>
