@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
-import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import ThemeProvider from '../components/ThemeProvider/ThemeProvider';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Hotel Management',
-  description: 'Discover the best hotel'
+  description: 'Discover the best hotel rooms'
 };
 
 export default function RootLayout({
@@ -24,6 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={poppins.className}>
         <ThemeProvider>
           <main className="font-normal">

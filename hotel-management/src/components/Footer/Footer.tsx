@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import { BiMessageDetail } from 'react-icons/bi';
 import { BsFillSendFill, BsTelephoneOutbound } from 'react-icons/bs';
+import { BiMessageDetail } from 'react-icons/bi';
 
 const Footer = () => {
   return (
@@ -16,38 +15,39 @@ const Footer = () => {
         <div className="flex flex-wrap gap-16 items-center justify-between">
           <div className="flex-1">
             <p>Ho Chi Minh City</p>
-
             <div className="flex items-center py-4">
+              <BsFillSendFill />
+              <p className="ml-2">VietNam</p>
+            </div>
+            <div className="flex items-center">
               <BsTelephoneOutbound />
-              <p className="mr-2">&nbsp;0903.762.463</p>
+              <p className="ml-2">0903.762.463</p>
             </div>
-            <div className="flex items-center py-4">
+            <div className="flex items-center pt-4">
               <BiMessageDetail />
-              <p className="mr-2">Contact me.</p>
+              <p className="ml-2">CodeWithMe</p>
             </div>
-          </div>
-
-          <div className="flex-1 text-right">
-            <p className="pb-4">Our Story</p>
-            <p className="pb-4">Get In Touch</p>
-            <p className="pb-4">Our Privacy Commitment</p>
-            <p className="pb-4">Terms of Service</p>
-            <p>Cutomer Assistance</p>
           </div>
 
           <div className="flex-1 md:text-right">
-            <p className="pb-4">Dinning Experience</p>
+            <p className="pb-4">Our Story</p>
+            <p className="pb-4">Get in Touch</p>
+            <p className="pb-4">Our Privacy Commitment</p>
+            <p className="pb-4">Terms of service</p>
+            <p>Customer Assistance</p>
+          </div>
+
+          <div className="flex-1 md:text-right">
+            <p className="pb-4">Dining Experience</p>
             <p className="pb-4">Wellness</p>
             <p className="pb-4">Fitness</p>
             <p className="pb-4">Sports</p>
-            <p>Event</p>
+            <p>Events</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-tertiary-light h-10 md:h-[70px] mt-16 w-full bottom-0 left-0">
-
-      </div>
+      <div className="bg-tertiary-light h-10 md:h-[70px] mt-16 w-full bottom-0 left-0" />
     </footer>
   );
 };
